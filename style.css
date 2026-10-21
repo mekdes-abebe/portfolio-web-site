@@ -1,5 +1,4 @@
-
-/* General styling */
+ General styling */
 
 * {
     margin: 0;
@@ -70,6 +69,138 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
+    }
+
+}
+
+/* HERO SECTION */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-greeting {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #e2e8f0;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    color: #94a3b8;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.primary {
+    background: #7c3aed;
+    color: white;
+}
+
+.primary:hover {
+    background: #6d28d9;
+    transform: translateY(-3px);
+}
+
+.secondary {
+    border: 1px solid #a78bfa;
+    color: white;
+}
+
+.secondary:hover {
+    background: #7c3aed;
+}
+
+/* HERO VISUAL */
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.hero-circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 2px solid #a78bfa;
+    background: linear-gradient(135deg, #1e293b, #3b1d68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 55px rgba(124, 58, 237, 0.2);
+}
+
+.hero-circle span {
+    font-size: 85px;
+    font-weight: bold;
+    color: #c4b5fd;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .hero-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 
 }
