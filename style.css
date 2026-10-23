@@ -331,3 +331,120 @@ html {
     }
 
 }
+
+/* ==========================
+   DAY 4 - TECHNICAL SKILLS
+========================== */
+
+.skills {
+    padding: 100px 8%;
+    background-color: #0f172a;
+}
+
+/* Section Heading */
+
+.skills-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.skills-label {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.skills-heading h2 {
+    font-size: 38px;
+    color: white;
+}
+
+.skills-heading h2 span {
+    color: #a78bfa;
+}
+
+.skills-line {
+    width: 55px;
+    height: 3px;
+    background-color: #a78bfa;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+.skills-intro {
+    color: #94a3b8;
+    font-size: 15px;
+    max-width: 550px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+}
+
+/* Skills Grid */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* Individual Skill Cards */
+
+.skill-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    border-color: #a78bfa;
+}
+
+.skill-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 19px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .skills {
+        padding: 70px 6%;
+    }
+
+    .skills-heading h2 {
+        font-size: 30px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+}
