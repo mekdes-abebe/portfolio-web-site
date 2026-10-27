@@ -38,22 +38,29 @@ body {
 /* Navigation Links */
 
 .nav-links {
-    display: flex;
+    /* display: flex;
     list-style: none;
-    gap: 35px;
+    gap: 35px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 25px;
 }
 
 .nav-links a {
-    text-decoration: none;
+    /* text-decoration: none;
     color: white;
     font-size: 16px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; */
+    font-size: 14px;
 }
 
 /* Hover Effect */
 
 .nav-links a:hover {
-    color: #38bdf8;
+    color: #c3cacd;
 }
 
 /* Responsive Design */
@@ -78,6 +85,10 @@ body {
 html {
     scroll-behavior: smooth;
 }
+section{
+    scroll-margin-top: 100px;
+}
+
 
 .hero {
     min-height: 85vh;
@@ -205,9 +216,9 @@ html {
 
 }
  
-/* ==========================
+/* 
    DAY 3 - ABOUT ME SECTION
-========================== */
+*/
 
 .about {
     padding: 100px 8%;
@@ -332,9 +343,9 @@ html {
 
 }
 
-/* ==========================
+/* 
    DAY 4 - TECHNICAL SKILLS
-========================== */
+ */
 
 .skills {
     padding: 100px 8%;
@@ -449,9 +460,9 @@ html {
 
 }
 
-/* ==========================
+/* 
    DAY 5 - CURRENTLY LEARNING
-========================== */
+ */
 
 .learning {
     padding: 100px 8%;
@@ -561,6 +572,172 @@ html {
 
     .learning-container {
         grid-template-columns: 1fr;
+    }
+
+}
+
+/*
+   DAY 6 - FUTURE LEARNING ROADMAP
+ */
+
+.roadmap {
+    padding: 100px 8%;
+    background-color: #0f172a;
+}
+
+/* Heading */
+
+.roadmap-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.roadmap-label {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.roadmap-heading h2 {
+    font-size: 38px;
+    color: white;
+}
+
+.roadmap-heading h2 span {
+    color: #a78bfa;
+}
+
+.roadmap-line {
+    width: 55px;
+    height: 3px;
+    background-color: #a78bfa;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+.roadmap-intro {
+    color: #94a3b8;
+    max-width: 550px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+/* Timeline */
+
+.roadmap-container {
+    max-width: 850px;
+    margin: auto;
+    position: relative;
+}
+
+/* Vertical Timeline Line */
+
+.roadmap-container::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 20px;
+    bottom: 50px;
+    width: 2px;
+    background: #7c3aed;
+}
+
+/* Timeline Item */
+
+.roadmap-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.roadmap-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Number Circle */
+
+.roadmap-number {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background: #7c3aed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+/* Roadmap Cards */
+
+.roadmap-card {
+    flex: 1;
+    min-width: 0;
+    background: #1e293b;
+    padding: 28px;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.roadmap-card:hover {
+    transform: translateX(6px);
+    border-color: #a78bfa;
+}
+
+.roadmap-card h3 {
+    color: white;
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.roadmap-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Status Label */
+
+.roadmap-status {
+    display: inline-block;
+    color: #c4b5fd;
+    background: rgba(167, 139, 250, 0.12);
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .roadmap {
+        padding: 70px 6%;
+    }
+
+    .roadmap-heading h2 {
+        font-size: 30px;
+    }
+
+    .roadmap-item {
+        gap: 15px;
+    }
+
+    .roadmap-card {
+        padding: 20px;
+    }
+
+    .roadmap-card h3 {
+        font-size: 18px;
     }
 
 }
