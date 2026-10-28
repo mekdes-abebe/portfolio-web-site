@@ -741,3 +741,162 @@ section{
     }
 
 }
+
+/* ==========================
+   DAY 7 - PROJECTS SECTION
+========================== */
+
+.projects {
+    padding: 100px 8%;
+    background-color: #111827;
+}
+
+/* Section heading */
+
+.projects-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.projects-label {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.projects-heading h2 {
+    font-size: 38px;
+    color: white;
+}
+
+.projects-heading h2 span {
+    color: #a78bfa;
+}
+
+.projects-line {
+    width: 55px;
+    height: 3px;
+    background: #a78bfa;
+    border-radius: 5px;
+    margin: 15px auto;
+}
+
+.projects-intro {
+    color: #94a3b8;
+    line-height: 1.8;
+    margin: 20px auto;
+}
+
+/* Project layout */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Project cards */
+
+.project-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: #a78bfa;
+}
+
+/* Project image placeholder */
+
+.project-image {
+    height: 190px;
+    background: linear-gradient(135deg, #31204f, #6540a1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image span {
+    font-size: 65px;
+}
+
+/* Project details */
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.project-content p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Technologies */
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.project-tech span {
+    background: rgba(167, 139, 250, 0.12);
+    color: #c4b5fd;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* Project links */
+
+.project-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #c4b5fd;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: white;
+}
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+
+    .projects {
+        padding: 70px 6%;
+    }
+
+    .projects-heading h2 {
+        font-size: 30px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 160px;
+    }
+
+}
