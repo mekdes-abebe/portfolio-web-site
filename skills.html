@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Mekdes Abebe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">MEKDES<span>.</span></a>
+            <div class="menu-container">
+                <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" target="_blank">Home</a>
+                    <a href="about.html" target="_blank">About</a>
+                    <a href="skills.html" class="active">Skills</a>
+                    <a href="projects.html" target="_blank">Selected Work</a>
+                    <a href="journey.html" target="_blank">My Journey</a>
+                    <a href="achievements.html" target="_blank">Achievements</a>
+                    <a href="contact.html" target="_blank">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="section">
+        <div class="section-heading">
+            <span class="section-number">02 / MY SKILLS</span>
+            <h2>Tools of my <span class="gradient-text">craft.</span></h2>
+            <p>These are technologies I have studied, used, or am currently practicing. Select a card to learn more.</p>
+        </div>
+
+        <div class="skills-grid">
+            <button class="skill-card glass-card" data-skill="HTML5">
+                <div class="skill-icon html-icon">&lt;/&gt;</div>
+                <span class="skill-category">FRONTEND</span>
+                <h3>HTML5</h3>
+                <p>Structured and meaningful web pages.</p>
+                <span class="skill-status">Learning & Practicing</span>
+            </button>
+
+            <button class="skill-card glass-card" data-skill="CSS3">
+                <div class="skill-icon css-icon">✳</div>
+                <span class="skill-category">FRONTEND</span>
+                <h3>CSS3</h3>
+                <p>Responsive and attractive interfaces.</p>
+                <span class="skill-status">Learning & Practicing</span>
+            </button>
+
+            <button class="skill-card glass-card" data-skill="JavaScript">
+                <div class="skill-icon js-icon">JS</div>
+                <span class="skill-category">PROGRAMMING</span>
+                <h3>JavaScript</h3>
+                <p>Programming logic and web interactivity.</p>
+                <span class="skill-status">Developing Skills</span>
+            </button>
+
+            <button class="skill-card glass-card" data-skill="C++">
+                <div class="skill-icon cpp-icon">C++</div>
+                <span class="skill-category">PROGRAMMING</span>
+                <h3>C++</h3>
+                <p>Programming logic and OOP fundamentals.</p>
+                <span class="skill-status">Fundamentals</span>
+            </button>
+
+            <button class="skill-card glass-card" data-skill="Java">
+                <div class="skill-icon java-icon">J</div>
+                <span class="skill-category">PROGRAMMING</span>
+                <h3>Java</h3>
+                <p>Object-oriented programming concepts.</p>
+                <span class="skill-status">Fundamentals</span>
+            </button>
+
+            <button class="skill-card glass-card" data-skill="Python">
+                <div class="skill-icon python-icon">Py</div>
+                <span class="skill-category">PROGRAMMING</span>
+                <h3>Python</h3>
+                <p>Python syntax and classes.</p>
+                <span class="skill-status">Currently Learning</span>
+            </button>
+
+            <button class="skill-card glass-card" data-skill="Git and GitHub">
+                <div class="skill-icon git-icon">⌘</div>
+                <span class="skill-category">DEVELOPMENT TOOLS</span>
+                <h3>Git & GitHub</h3>
+                <p>Version control and repositories.</p>
+                <span class="skill-status">Learning & Practicing</span>
+            </button>
+
+            <button class="skill-card glass-card" data-skill="MySQL">
+                <div class="skill-icon mysql-icon">DB</div>
+                <span class="skill-category">DATABASE</span>
+                <h3>MySQL</h3>
+                <p>Tables, data, and SQL queries.</p>
+                <span class="skill-status">Learning & Practicing</span>
+            </button>
+
+            <button class="skill-card glass-card" data-skill="VS Code">
+                <div class="skill-icon vscode-icon">VS</div>
+                <span class="skill-category">DEVELOPMENT TOOLS</span>
+                <h3>VS Code</h3>
+                <p>Writing and organizing code.</p>
+                <span class="skill-status">Using Regularly</span>
+            </button>
+        </div>
+
+        <div class="modal" id="skillModal" aria-hidden="true">
+            <div class="modal-content glass-card">
+                <button class="modal-close" id="closeSkillModal" aria-label="Close">&times;</button>
+                <span class="small-label">TECHNOLOGY DETAILS</span>
+                <h2 id="skillTitle">Technology</h2>
+                <p id="skillDescription"></p>
+                <h3>What I'm Learning</h3>
+                <p id="skillLearning"></p>
+                <h3>What I'm Practicing</h3>
+                <p id="skillPractice"></p>
+                <h3>Practical Connection</h3>
+                <p id="skillExample"></p>
+            </div>
+        </div>
+
+        <div class="section-action">
+            <a href="index.html" class="btn btn-outline">Back to Home ↗</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="logo">MEKDES<span>.</span></a>
+        <p>Designed & built with curiosity.</p>
+        <p class="copyright">© 2026 Mekdes Abebe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
