@@ -415,8 +415,8 @@ button {
 
 .profile-frame {
     position: relative;
-    width: 310px;
-    height: 380px;
+    width: 450px;
+    height: 500px;
 
     display: flex;
     justify-content: center;
