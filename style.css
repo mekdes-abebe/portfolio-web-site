@@ -1,4 +1,4 @@
-
+/* 
 /* =====================================
    1. GLOBAL SETTINGS
 ===================================== */
@@ -1258,4 +1258,4 @@ a:focus-visible,
 button:focus-visible {
     outline: 2px solid var(--cyan);
     outline-offset: 4px;
-}
+} 
